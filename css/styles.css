@@ -206,6 +206,7 @@ input[type=submit]{
 }
     .flip-card-front > p{
         font-size: 30px;
+        text-align: center;
     }
     .flip-card-back{
         display:  grid;
