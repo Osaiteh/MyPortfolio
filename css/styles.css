@@ -1,25 +1,43 @@
+/*Change Background Color*/
 body{
     background-color: #25262A;
 }
+
+/*style the right side of the page*/
 .right-div{
     flex: 50%;
     padding: 5%;
-
 }
+
+/*Edit Profile Picture*/
 .profile-picture > img{
-    width: 200px;
-    height: 255px;
+    width: 150px;
+    height: auto;
     border-radius: 50%;
     float: right;
 }
-.left-div{
-    flex: 50%;
-    padding: 7%, 5%;
-}
+
+/*Edit Profile summary*/
 .my summary{
     margin: 5%;
 }
 
+.intro{
+    color: #FFFFFF;
+}
+/*Edit Profile name*/
+.name{
+    color: #FFFFFF;
+    font-size: 2.5em;
+}
+
+/*left div*/
+.left-div{
+    flex: 50%;
+    padding: 7%, 5%;
+}
+
+/*Edit skills card*/
 .card{
     background-color: #2D2E32;
     margin: 1%;
@@ -54,8 +72,9 @@ body{
    flex-direction: column;
    margin: 10px;
    background-color:transparent;
-   
 }
+
+/***************NAVIGATION BAR***************/
 .navbar {
     display: flex;
     justify-content: flex-end; 
@@ -73,20 +92,6 @@ body{
   .navbar a:hover {
     background: #25262A;
     color: #64F5AA;
-  }
-  
-
-  .intro{
-      color: #FFFFFF;
-  }
-  .name{
-      color: #FFFFFF;
-      font-size: 2.5em;
-  }
-  footer{
-      padding: 20px;
-      background-color: #2D2E32;
-      color:#FFFFFF;
   }
   
   h3, p{
@@ -110,44 +115,42 @@ body{
       display: flex;
       flex-direction: row;
       padding: 2%;
+      background-color: #2D2E32;
+      color:#FFFFFF;
+      align-items: center;
+      justify-content: space-around;
   }
-  .footer-flip-card {
-    background-color: transparent;
-    width: 50%;
-    perspective: 1000px;
-    margin:10px;
-    display: flex;
-    align-items: inherit;
-    justify-content:space-evenly;
+
+  /***************FOOTER LINK***************/
+  .footer-card{
+      display: flex;
+      width: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .footer-flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .card-link > a{
+  .card-link > a {
       color: #FFFFFF;
-      font-size: 45px;   
-    margin-right: 10px;
+      width: 50%;
+      font-size: 45px; 
     -webkit-text-stroke: 1px #2d2E32;
   }
   .card-link > a:hover{
     color: #64F5AA;
+}
 
-}
+
+/***************FOOTER FORM***************/
 .footer-form{
-    display: flex;
+    display: contents;
     margin: 2%;
+    width: 50%;
+    background-color: lawngreen;
 }
+.section{
+    margin: 1%;
+    height: max-content;
+}
+
 input[type=text]{
     width: 70%;
     padding: 10px;
@@ -158,10 +161,7 @@ input[type=text]{
     resize: vertical;
     
 }
-section{
-    margin: 1%;
-    height: max-content;
-}
+
 input[type=submit]{
     background-color: #4CAF50;
   color: white;
@@ -173,17 +173,5 @@ input[type=submit]{
 }
 
 @media screen and (max-width: 640px) {
-    .skills-card {
-      width: auto;
-      height: auto;
-      flex-direction: column;
-}
-    .footer{
-    width: 100%;
-}
-    .card-link > p{
-        font-size: 30px;
-        text-align: center;
-        display:  grid;
-    }
+    
 }
