@@ -209,6 +209,6 @@ input[type=submit]{
         font-size: 8px;
     }
     .flip-card-back{
-        display:  row;
+        display:  grid;
     }
 }
