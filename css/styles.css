@@ -206,6 +206,6 @@ input[type=submit]{
     width: 100%;
 }
     .flip-card-front > p{
-        text-size: 8px;
+        font-size: 8px;
     }
 }
