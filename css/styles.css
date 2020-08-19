@@ -200,7 +200,7 @@ input[type=submit]{
       width: 100%;
       height: auto;
       flex-direction: row;
-      
+      display: flex;
 }
     .footer{
     width: 100%;
@@ -209,6 +209,6 @@ input[type=submit]{
         font-size: 8px;
     }
     .flip-card-back{
-        display: grid;
+        display:  column;
     }
 }
