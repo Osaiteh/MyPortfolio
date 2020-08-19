@@ -193,3 +193,9 @@ input[type=submit]{
   cursor: pointer;
   float: right;
 }
+
+@media screen and (max-width: 640px) {
+    .skills-card {
+      padding: 10px;
+      margin: 10px;
+    }
