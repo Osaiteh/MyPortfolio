@@ -197,10 +197,9 @@ input[type=submit]{
 
 @media screen and (max-width: 640px) {
     .skills-card {
-      width: 100%;
+      width: 20%;
       height: auto;
-      flex-direction: row;
-      display: none;
+      flex-direction: column;
 }
     .footer{
     width: 100%;
