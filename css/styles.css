@@ -200,12 +200,15 @@ input[type=submit]{
       width: 100%;
       height: auto;
       flex-direction: row;
-      display: grid;
+      
 }
     .footer{
     width: 100%;
 }
     .flip-card-front > p{
         font-size: 8px;
+    }
+    .flip-card-back{
+        display: grid;
     }
 }
