@@ -3,12 +3,12 @@ body{
 }
 .skills-card{
     display: grid; 
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-gap: 10px;
-    padding: 10px;
+    padding: 50px;
     height: 200px;
     width: 500px;
-    text-align: center;
+    text-align: left;
 
 }
 .card{
@@ -71,6 +71,26 @@ body{
       color: #FFFFFF;
   }
   .name{
-
+      color: #FFFFFF;
+      size: 3em;
+  }
+  footer{
+      padding-top: 20px;
+      position:fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #2D2E32;
+      color:#FFFFFF;
+  }
+  .footer-form{
+      
+  }
+  h3, p{
+      color: #FFFFFF;
+      width: 100%;
+  }
+  h2, p, h3{
+      margin: 20px;
   }
   
