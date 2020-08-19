@@ -134,38 +134,13 @@ body{
     transform: rotateY(180deg);
   }
   
-  .flip-card-front, .flip-card-back {
-    position: -webkit-sticky;
-    width: 100%;
-    height: auto;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-      text-align: center;
-      margin: 2%;
-      width:100%;
-  }
-  
-  .flip-card-front {
-    background-color: #25262A;
-    
-  }
-  .flip-card-front > p{
-      font-size: 40px;
-      color: #64F5AA;
-      text-align: center;
-  }
-  
-  .flip-card-back {
-    background-color: #2D2E32;
-    transform: rotateY(180deg);
-  }
-  .flip-card-back > a{
+  .card-link > a{
       color: #FFFFFF;
       font-size: 45px;   
     margin-right: 10px;
     -webkit-text-stroke: 1px #2d2E32;
   }
-  .flip-card-back > a:hover{
+  .card-link > a:hover{
     color: #64F5AA;
 
 }
@@ -206,11 +181,9 @@ input[type=submit]{
     .footer{
     width: 100%;
 }
-    .flip-card-front > p{
+    .card-link > p{
         font-size: 30px;
         text-align: center;
-    }
-    .flip-card-back{
         display:  grid;
     }
 }
