@@ -159,7 +159,6 @@ input[type=text]{
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
-    
 }
 
 input[type=submit]{
@@ -173,5 +172,7 @@ input[type=submit]{
 }
 
 @media screen and (max-width: 640px) {
-    
+    .footer-form{
+        float: right;
+    }
 }
