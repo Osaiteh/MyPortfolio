@@ -152,6 +152,7 @@ body{
   .flip-card-front > p{
       font-size: 40px;
       color: #64F5AA;
+      text-align: center;
   }
   
   .flip-card-back {
@@ -166,6 +167,7 @@ body{
   }
   .flip-card-back > a:hover{
     color: #64F5AA;
+
 }
 .footer-form{
     display: flex;
