@@ -14,7 +14,7 @@ body{
 }
 .left-div{
     flex: 50%;
-    padding: 5%;
+    padding: 7%, 5%;
 }
 .my summary{
     margin: 5%;
