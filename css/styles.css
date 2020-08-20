@@ -111,22 +111,15 @@ body{
   }
 
   /***************FOOTER***************/
-  .footer{
-      display: flex;
-      flex-direction: row;
-      padding: 2%;
-      background-color: #2D2E32;
-      color:#FFFFFF;
-      align-items: center;
-      justify-content: space-around;
-  }
-
+ 
   /***************FOOTER LINK***************/
   .footer-card{
       display: flex;
-      width: 50%;
+      width: 100%;
+      padding: 2%;
+      background-color: #2D2E32;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-items: space-evenly;
   }
   .card-link > a {
       color: #FFFFFF;

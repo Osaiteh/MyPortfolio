@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css"></head>
     <script src="https://kit.fontawesome.com/7d13c6c267.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <body>
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="education.html">Education & Training</a>
+        <a href="contact.html">Contact</a>
       </div>
     
 </body>
 
-<footer class="footer">
+<p>LET'S CHAT!</p>
+<form name="section" method="POST" data-netlify="true">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <input type="submit" value="Send">
+  </form>
+
   <div class="footer-card">
-              <p>LET'S CHAT!</p>
           
           <div class="card-link">
               <a href="mailto: osaiteh@gmail.com">
@@ -38,28 +42,7 @@
           <i class="fab fa-github"></i>
       </a>
       </div>
-      
-
+      <p>&copy; 2020 Ogbebor Glory</p>
   </div>
 
-  <div class="footer-form">
-      <form action="" >
-          <div class="container1">
-              <p>Subscribe to our Newsletter</p>
-              </div>
-
-          <form name="section" method="POST" data-netlify="true">
-              <input type="text" placeholder="Name" name="name" required>
-              <input type="text" placeholder="Email address" name="mail" required>
-              <label> <br>
-                  <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-              </label>
-            </form>
-
-          <div class="container2">
-              <input type="submit" value="Subscribe">
-          </div>
-      </form>
-  </div>
-</footer>
 </html>
