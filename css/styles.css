@@ -1,171 +1,262 @@
-/*Change Background Color*/
-body{
-    background-color: #25262A;
-}
-
-/*style the right side of the page*/
-.right-div{
-    flex: 50%;
-    padding: 5%;
-}
-
-/*Edit Profile Picture*/
-.profile-picture > img{
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    float: right;
-}
-
-/*Edit Profile summary*/
-.my summary{
-    margin: 5%;
-}
-
-.intro{
-    color: #FFFFFF;
-}
-/*Edit Profile name*/
-.name{
-    color: #FFFFFF;
-    font-size: 2.5em;
-}
-
-/*left div*/
-.left-div{
-    flex: 50%;
-    padding: 7%, 5%;
-}
-
-/*Edit skills card*/
-.card{
-    background-color: #2D2E32;
-    margin: 1%;
-    color: #ffffffFF;
-    perspective: 1000px;
-    transition: 0.3s;
-    border-radius: 5px;
-}
-.card.one:hover{
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
-}
-.card.two:hover{
-    box-shadow: 10px 0px 10px 10px rgba(0, 0, 0, 0.5);
-}
-.card.three:hover{
-    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-.card.four:hover{
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);;
-}
-
-.card > h2:hover{
-    color: #64F5AA;
-}
-.card > p:hover{
-    text-decoration: underline;
-    color:#FFFFFF;
-}
-
-.skills-card{
-    display: flex; 
-   flex-direction: column;
-   margin: 10px;
-   background-color:transparent;
-}
-
-/***************NAVIGATION BAR***************/
-.navbar {
+/*************************||*************************/
+/*************************|NAV BAR|*************************/
+.navbar{
+    background-color: red;
     display: flex;
-    justify-content: flex-end; 
-  }
-  
-  .navbar a {
-    float: left;
-    display: block;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 14px 16px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+}
+.navbar-name{
+    background-color: orange;
+    display: flex;
+    flex: 0.75;
+}
+.navbar-menu{
+    background-color: yellow;
+    flex: 1.7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+.navbar-links{
+    background-color: green;
+    display: flex;
+    flex: 0.75;
+    justify-content: space-evenly;
+    align-items: center
+}
+.navbar-links > a {
+    color: inherit;
     text-decoration: none;
-  }
-  
-  .navbar a:hover {
-    background: #25262A;
-    color: #64F5AA;
-  }
-  
-  h3, p{
-      color: #FFFFFF;
-      width: 100%;
-  }
-  h2, p, h3{
-      margin: 20px;
-  }
-  
-  .main-div{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-        align-items: center;
-        width: 100%;
-  }
+}
+.navbar-menu > a {
+    color: inherit;
+    text-decoration: none;
+}
+.navbar-space{
+    color: transparent;
+}
 
-  /***************FOOTER***************/
- 
-  /***************FOOTER LINK***************/
-  .footer-card{
-      display: flex;
-      width: 100%;
-      padding: 2%;
-      background-color: #2D2E32;
+/*************************|FOOTER|*************************/
+footer{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+.left-footer{
+    background-color: purple;
+    display: flex;
     flex-direction: column;
-    justify-items: space-evenly;
-  }
-  .card-link > a {
-      color: #FFFFFF;
-      width: 50%;
-      font-size: 45px; 
-    -webkit-text-stroke: 1px #2d2E32;
-  }
-  .card-link > a:hover{
-    color: #64F5AA;
+    justify-content: space-evenly;
+    flex: 1;
+}
+.left-footer-link{
+    background-color: red;
+    flex: 1;
+}
+.left-footer-text{
+    background-color: orange;
+     display: flex;
+    justify-content: space-between;
+}
+.left-footer-name{
+    background-color: yellow;
+    flex: 1;
+}
+.left-footer-copyright{
+    background-color: green;
+    flex: 1.5;
+}
+.right-footer{
+    background-color: pink;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    flex-direction: column;
+}
+.right-footer-menu{
+    background-color: orangered;
+    display: flex;
+    flex: 1;
+}
+.right-footer-menu-div{
+    justify-content: center;
+    flex: 1;
+}
+.right-footer-menu-items{
+    flex-direction: column;
+    display: flex;
+}
+.right-footer-form{
+    background-color: peru;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.right-footer-link{
+    background: orchid;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+.right-footer-link-items{
+    display: flex;
+    align-items: center;
+}
+/*************************|BODY|*************************/
+body{
+}
+/*************************|PROJECT.HTML|*************************/
+.works{
+    background-color: red;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.work-1{
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.animated-works{
+    background-color: green;
 
-/***************FOOTER FORM***************/
-.footer-form{
-    display: contents;
-    margin: 2%;
-    width: 50%;
-    background-color: lawngreen;
 }
-.section{
+.work-2{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.work-3{
+    background-color: indigo;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.picture-card{
+    background-color: yellow;
+    height: 15vh;
+    width: 25vw;
+    object-fit: cover;
+    overflow: hidden;
+    flex: 1;
+    margin: 3vw;
+}
+.picture-card-special{
+    background-color: yellow;
+    height: 30vh;
+    width: 40vh;
+    margin:2vw;
+    overflow: hidden;
+    object-fit: cover;
+}
+.picture-card > img{
+    max-width: 100%;
+}
+.picture-card-special > img{
+    max-width: 100%;
+}
+.project-description{
+    width: 20vw;
+    margin: 3vw;
+    padding: 3vw;
+    padding-top: 1px;
+    margin-top: 1px;
+}
+/*************************|SKILLS.HTML|*************************/
+.main-div{
+    background-color: fuchsia;
+    display: flex;
+}
+.left-div{
+    background-color: orange;
+    flex: 1;
+    margin: 2vh;
+}
+.skills-topic{
+    background-color: green;
+}
+.skills-card{
+    background-color: blue;
+    display: flex;
+    padding: 3%;
+    flex-direction: column;
+    justify-content: space-around;;
+}
+.skill-card{
+    background-color: indigo;
+}
+.skill-card > p{
+    text-align: center
+}
+.right-div{
+    background-color: yellow;
+    flex: 1;
+    margin: 2vw;
+}
+.profile{
+    display: flex;
+}
+.profile-picture{
+    background-color: violet;
+    width: 15vw;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    flex: 1;
+}
+.profile-picture > img{
+    max-width: 100%;
+}
+.profile-name{
+    background-color: orangered;
+    flex: 1.5;
+    padding: 1%;
     margin: 1%;
-    height: max-content;
+    font-size: 5vw;
 }
 
-input[type=text]{
-    width: 70%;
-    padding: 10px;
-    margin: 1%;
-    border: 1px;
-    border-radius: 4px;
-    box-sizing: border-box;
+.summary-div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.summary-div > p{
+    background-color: palegreen;
+    width: 20vw;
+    text-align: center;
+}
+/*************************|CONTACT>HTML|*************************/
+.contact-div{
+    background-color: hotpink;
+    display: flex;
+    padding: 5vw;
+    flex-direction: column;
+}
+.contact-div > p{
+    font-size: 5vw;
+}
+input, textarea{
     resize: vertical;
+    width: 60vw;
 }
-
-input[type=submit]{
-    background-color: #4CAF50;
-  color: white;
-  padding: 6px 5px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
+textarea{
+    height: 15VW;
 }
-
-@media screen and (max-width: 640px) {
-    .footer-form{
-        float: right;
-    }
+.footer-form{
+    width: 32vw;
+    display: flex;
+    margin:1vw;
+}
+.footer-form > input{
+    padding: 0.5vw;
+    width: 18vw;
 }
