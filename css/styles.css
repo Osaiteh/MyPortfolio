@@ -3,7 +3,18 @@
     from{width: 0}
     to{width: 100%}
 }
-
+@keyframes rainbow{
+    0%{color:red;}
+    5%{color: red;}
+    17%{color: orangered;}
+    29%{color: yellow;}
+    41%{color: greenyellow;}
+    53%{color: green;}
+    65%{color: blue;}
+    77%{color: indigo;}
+    89%{color: violet;}
+    100%{color: fuchsia;}
+}
 /*************************|NAV BAR|*************************/
 .navbar{
     display: flex;
@@ -120,6 +131,7 @@ footer{
 }
 .right-footer-div{
     justify-content: center;
+    border-bottom: 1px solid fuchsia;
 }
 .right-footer-link-items{
     justify-content: space-around;
@@ -127,7 +139,24 @@ footer{
     display: flex;
     font-size: 1.75vw;
     margin: 0.25vw;
-    border-bottom: 1px solid fuchsia;
+}
+.twitter{
+    color: red;
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.linkedin{
+    color: red;
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.github{
+    color: red;
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 /*************************|BODY|*************************/
 html, body{
