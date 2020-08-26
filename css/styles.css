@@ -4,7 +4,6 @@
     background-color: red;
     display: flex;
     justify-content: space-between;
-    position: fixed;
     width: 100vw;
 }
 .navbar-name{
@@ -33,9 +32,6 @@
 .navbar-menu > a {
     color: inherit;
     text-decoration: none;
-}
-.navbar-space{
-    color: transparent;
 }
 
 /*************************|FOOTER|*************************/
@@ -105,7 +101,9 @@ footer{
     align-items: center;
 }
 /*************************|BODY|*************************/
-body{
+html, body{
+    margin: 0;
+    padding: 0;
 }
 /*************************|PROJECT.HTML|*************************/
 .works{
@@ -142,17 +140,12 @@ body{
 }
 .picture-card{
     background-color: yellow;
-    height: 15vh;
-    width: 25vw;
     object-fit: cover;
     overflow: hidden;
-    flex: 1;
     margin: 3vw;
 }
 .picture-card-special{
     background-color: yellow;
-    height: 30vh;
-    width: 40vh;
     margin:2vw;
     overflow: hidden;
     object-fit: cover;
@@ -164,11 +157,16 @@ body{
     max-width: 100%;
 }
 .project-description{
-    width: 20vw;
+    /* width: 20vw;
     margin: 3vw;
     padding: 3vw;
     padding-top: 1px;
-    margin-top: 1px;
+    margin-top: 1px; */
+}
+@media screen and (max-width: 700px){
+    .works{
+        flex-direction: column;
+    }
 }
 /*************************|SKILLS.HTML|*************************/
 .main-div{
@@ -187,15 +185,13 @@ body{
     background-color: blue;
     display: flex;
     padding: 3%;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: space-around;;
 }
 .skill-card{
     background-color: indigo;
 }
-.skill-card > p{
-    text-align: center
-}
+
 .right-div{
     background-color: yellow;
     flex: 1;
@@ -259,4 +255,91 @@ textarea{
 .footer-form > input{
     padding: 0.5vw;
     width: 18vw;
+}
+/*************************|INDEX HTML|*************************/
+header{
+    color:white;
+    text-align: center;
+    margin: 0;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url(https://images.unsplash.com/photo-1507537417841-81e85feb9bd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80); 
+    height: 100vh; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+header > p{
+    margin-top: 0;
+    line-height: 3;
+    font-size: 1.7em;
+}
+header > a{
+    font-size: 1em;
+}
+/*************************|TESTIMONIALS|*************************/
+.marquee {
+ height: 50vh;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: orange;
+ border: 1px solid orange;
+}
+.marquee > p{
+    font-size: 3vw;
+    margin: 0;
+    padding: 0.5vw;
+}
+.marquee div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+  /*Apply animation to this element*/	
+ -moz-animation: scroll-left 30s linear infinite;
+ -webkit-animation: scroll-left 30s linear infinite;
+ animation: scroll-left 30s linear infinite;
+}
+
+.testimony > div > p{
+    line-height: 1;
+    margin-right: 20vw;
+    width: 10vw;
+}
+.testimony > div > p > img{
+    height: 50px;
+    border-radius: 50%;
+    margin: 2px;
+    padding: 2px;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
 }
