@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     width: 100vw;
+    margin: 1vw;
 }
 .navbar-name{
     background-color: orange;
@@ -78,27 +79,29 @@ footer{
 }
 .right-footer-menu-div{
     justify-content: center;
-    flex: 1;
 }
 .right-footer-menu-items{
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     display: flex;
+    margin: 0.25vw;
+    font-size: 1.75vw
 }
 .right-footer-form{
     background-color: peru;
-    flex: 1;
     display: flex;
     flex-wrap: wrap;
+    margin: 0.25vw;
 }
-.right-footer-link{
-    background: orchid;
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
+.right-footer-div{
+    justify-content: center;
 }
 .right-footer-link-items{
-    display: flex;
+    justify-content: space-around;
     align-items: center;
+    display: flex;
+    font-size: 1.75vw;
+    margin: 0.25vw;
 }
 /*************************|BODY|*************************/
 html, body{
@@ -157,11 +160,10 @@ html, body{
     max-width: 100%;
 }
 .project-description{
-    /* width: 20vw;
-    margin: 3vw;
-    padding: 3vw;
-    padding-top: 1px;
-    margin-top: 1px; */
+    margin: 1vw;
+    padding: 1vw;
+    padding-top: 1vw;
+    margin-top: 1vw;
 }
 @media screen and (max-width: 700px){
     .works{
@@ -282,9 +284,8 @@ header > a{
  height: 50vh;	
  overflow: hidden;
  position: relative;
- background: yellow;
- color: orange;
- border: 1px solid orange;
+ background: turquoise;
+ color: black;
 }
 .marquee > p{
     font-size: 3vw;
@@ -317,7 +318,7 @@ header > a{
     width: 10vw;
 }
 .testimony > div > p > img{
-    height: 50px;
+    height: 80px;
     border-radius: 50%;
     margin: 2px;
     padding: 2px;
