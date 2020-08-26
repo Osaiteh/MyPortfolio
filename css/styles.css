@@ -1,78 +1,103 @@
 /*************************||*************************/
+@keyframes typing{
+    from{width: 0}
+    to{width: 100%}
+}
+
 /*************************|NAV BAR|*************************/
 .navbar{
-    background-color: red;
     display: flex;
     justify-content: space-between;
     width: 100vw;
+    border: 1px solid red;
 }
 .navbar-name{
-    background-color: orange;
     display: flex;
     flex: 0.75;
+    padding: 1vw;
+    border: 1px solid red;
+}
+.navbar-name span{
+    font-size:  22px;
+    font-weight: bold;
 }
 .navbar-menu{
-    background-color: yellow;
     flex: 1.7;
     display: flex;
     justify-content: space-evenly;
-    align-items: center
+    align-items: center;
+    border: 1px solid red;
+    color: blue;
 }
 .navbar-links{
-    background-color: green;
     display: flex;
     flex: 0.75;
     justify-content: space-evenly;
-    align-items: center
+    align-items: center;
+    border: 1px solid red;
 }
 .navbar-links > a {
-    color: inherit;
+    color: orangered;
     text-decoration: none;
+    padding: 1%;
+}
+
+.navbar-links > a:hover {
+    color: white;
+    background-color: orangered;
+    font-size: xx-large;
+    box-shadow: 5px 5px orangered;
+}
+.navbar-menu > .active{
+    font-size: 24px;
+    color: red;
 }
 .navbar-menu > a {
     color: inherit;
     text-decoration: none;
 }
+.navbar-menu > a:hover:not(.active){
+    color: blue;
+    text-shadow: 1px 1px 1px black;
+    font-size: 18px;
+}
 
 /*************************|FOOTER|*************************/
 footer{
-    background-color: blue;
     display: flex;
     justify-content: space-between;
 }
 .left-footer{
-    background-color: purple;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex: 1;
+    border: 2px 0 blue;
 }
 .left-footer-link{
-    background-color: red;
     flex: 1;
+    border: 1px solid fuchsia;
+    border-top: 0;
 }
 .left-footer-text{
-    background-color: orange;
      display: flex;
     justify-content: space-between;
 }
 .left-footer-name{
-    background-color: yellow;
+    border: 1px solid fuchsia;
     flex: 1;
 }
 .left-footer-copyright{
-    background-color: green;
+    border: 1px solid fuchsia;
     flex: 1.5;
 }
 .right-footer{
-    background-color: pink;
     display: flex;
     justify-content: space-evenly;
     flex: 1;
     flex-direction: column;
 }
 .right-footer-menu{
-    background-color: orangered;
     display: flex;
     flex: 1;
 }
@@ -84,13 +109,14 @@ footer{
     align-items: center;
     display: flex;
     margin: 0.25vw;
-    font-size: 1.75vw
+    font-size: 1.75vw;
+    border-bottom: 1px solid fuchsia;
 }
 .right-footer-form{
-    background-color: peru;
     display: flex;
     flex-wrap: wrap;
     margin: 0.25vw;
+    border-bottom: 1px solid fuchsia;
 }
 .right-footer-div{
     justify-content: center;
@@ -101,11 +127,18 @@ footer{
     display: flex;
     font-size: 1.75vw;
     margin: 0.25vw;
+    border-bottom: 1px solid fuchsia;
 }
 /*************************|BODY|*************************/
 html, body{
     margin: 0;
     padding: 0;
+    Font-Family: 'Fauna One', Serif;
+    Font-Size: 14px;
+}
+h{
+   Font-Family: 'Cinzel', Cursive;
+Font-Size: 44px;
 }
 /*************************|PROJECT.HTML|*************************/
 .works{
@@ -270,36 +303,63 @@ header{
     background-repeat: no-repeat; 
     background-size: cover;
 }
+.typing{
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-decoration: underline; */
+    text-shadow: 
+                    3px 3px 0 rgb(241, 7, 163),
+                    -1px -1px 0 rgb(241, 7, 163),
+                    1px 1px 0 rgb(241, 7, 163),
+                    -1px -1px 0 rgb(241, 7, 163),
+                    1px 1px 0 rgb(241, 7, 163);
+    margin: 0 auto;
+    font-size: 7vw;
+    animation: typing 8s steps(60,end) 1s 1 normal both;
+}
 header > p{
     margin-top: 0;
     line-height: 3;
     font-size: 1.7em;
 }
 header > a{
-    font-size: 1em;
+    font-size: 3em;
+    text-decoration: none;
+    color: rgb(241, 7, 163);
+    border: 1px solid rgb(241, 7, 163);
+    border-radius: 5%;
+    padding: 2%;
+    background-color: #fff;
+}
+header > a:hover{
+    box-shadow: 10px 10px  rgb(241, 7, 163);
 }
 /*************************|TESTIMONIALS|*************************/
 .marquee {
  height: 50vh;	
  overflow: hidden;
  position: relative;
- background: turquoise;
- color: black;
+ border:2px solid rgb(72, 255, 0);
+ color: rgb(4, 121, 14);
+ background-color: rgb(240, 255, 246);
 }
 .marquee > p{
-    font-size: 3vw;
+    font-size: 4vw;
+    font-weight: bold;
     margin: 0;
     padding: 0.5vw;
+    color: rgb(24, 163, 31);
+    text-decoration: underline;
 }
 .marquee div {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
  position: absolute;
  width: 100%;
  height: 100%;
  margin: 0;
- line-height: 50px;
+ line-height: 5px;
  text-align: center;
  /* Starting position */
  -moz-transform:translateX(100%);
@@ -315,6 +375,7 @@ header > a{
     line-height: 1;
     margin-right: 20vw;
     width: 10vw;
+    border: 1px solid rgb(254, 255, 255);
 }
 .testimony > div > p > img{
     height: 80px;
