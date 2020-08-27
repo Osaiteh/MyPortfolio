@@ -69,7 +69,7 @@
     text-decoration: none;
 }
 .navbar-menu > a:hover:not(.active){
-    color: blue;
+    color: rgb(145, 145, 160);
     text-shadow: 1px 1px 1px black;
     font-size: 18px;
 }
@@ -78,6 +78,8 @@
 footer{
     display: flex;
     justify-content: space-between;
+    margin-bottom:1vw;
+    background-image: url('https://kentuckylandscape.ca/wp-content/uploads/2016/02/footer-back.jpg');
 }
 .left-footer{
     display: flex;
@@ -88,19 +90,21 @@ footer{
 }
 .left-footer-link{
     flex: 1;
-    border: 1px solid fuchsia;
+    border: 2px solid black;
     border-top: 0;
 }
 .left-footer-text{
      display: flex;
     justify-content: space-between;
+    font-weight: bolder;
+    color: white;
 }
 .left-footer-name{
-    border: 1px solid fuchsia;
+    border: 2px solid black;
     flex: 1;
 }
 .left-footer-copyright{
-    border: 1px solid fuchsia;
+    border: 2px solid black;
     flex: 1.5;
 }
 .right-footer{
@@ -115,6 +119,7 @@ footer{
 }
 .right-footer-menu-div{
     justify-content: center;
+    flex: 2;
 }
 .right-footer-menu-items{
     justify-content: space-around;
@@ -122,7 +127,7 @@ footer{
     display: flex;
     margin: 0.25vw;
     font-size: 1.75vw;
-    border-bottom: 1px solid fuchsia;
+    border-bottom: 1px solid black;
     font-size: 3wv;
 }
 .right-footer-menu-items > a{
@@ -131,12 +136,25 @@ footer{
 .right-footer-form{
     display: flex;
     flex-wrap: wrap;
-    margin: 0.25vw;
-    border-bottom: 1px solid fuchsia;
+    margin: 0.15vw;
+    border-bottom: 1px solid black;
+    flex: 1;
+    border: 1px solid black;
+    background-color: black;
+    font-weight: bolder;
+    color: white;
+}
+.right-footer-form:hover{
+    border: 1px solid black;
+    background-color: white;
+    font-weight: bolder;
+    color: black;
+    box-shadow: 10px 0px 10px 10px black;
 }
 .right-footer-div{
     justify-content: center;
-    border-bottom: 1px solid fuchsia;
+    border-bottom: 2px solid black;
+    flex: 2;
 }
 .right-footer-link-items{
     justify-content: space-around;
@@ -144,6 +162,18 @@ footer{
     display: flex;
     font-size: 3vw;
     margin: 0.25vw;
+    color: white;
+}
+.footer-form{
+    text-align: center;
+
+}
+.right-footer-form-items  p{
+    font-size: 1vw;
+    font-weight: bold;
+    line-height: 0.5;
+    margin: 0.5vw;
+    padding: 0.5vw;
 }
 .twitter{
     color: red;
@@ -370,6 +400,7 @@ header > a{
 }
 header > a:hover{
     box-shadow: 10px 10px  rgb(241, 7, 163);
+    background-color: transparent;
 }
 /*************************|TESTIMONIALS|*************************/
 .marquee {
