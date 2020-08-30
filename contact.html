@@ -4,63 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel:700|Fauna+One" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-name">
-            <p>
-                <span>
-                    Glory
-                </span> 
-                Ogbebor
-            </p>
-        </div>
-        <div class="navbar-menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a  class="active" href="contact.html">Contact</a>
-            <a href="project.html">Projects</a>
-        </div>
-        <div class="navbar-links">
-            <a href="https://wwww.linkedin.com/in/osaiteh"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Osaiteh"><i class="fab fa-github-square"></i></a>
-            <a href="mailto:osaiteh@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
-        </div>
-    </div>
-    <div class="right-footer">
-        <div class="right-footer-menu-div">
-            <div class="right-footer-menu-items">
-                <a href="index.html"><i class="fas fa-home"></i> &nbsp; home</a>
-                <a href="about.html"><i class="far fa-question-circle"></i>about</a>
-                <a class="active" href="contact.html"><i class="far fa-address-card"></i>contact</a>
-                <a href="project.html"><i class="far fa-folder"></i>projects</a>
-                <a href="index.html#testimonials"><i class="fas fa-certificate"> testimonials</i></a>  
-            </div>
-        </div>
-        <div class="right-footer-form">
-            <div class="right-footer-form-items">
-                 <p>Stay Updated</p>
-                <p>Subscribe to our newsletter to get our latest news</p>
-                <div class="footer-form">
-                    <input type="email" class="footer-form-input-one" name="email" placeholder="Email address">
-                   <button type="submit">Subscribe!</button>
-                </div>
-            </div> 
-        </div>
 
-    <div class="right-footer-div">
-        <div class="right-footer-link-items">
-            <a href="https://www.linkedin.com/in/osaiteh"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/Osaiteh"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/osaiteh"> <i class="fab fa-twitter"></i></a>
+
+  <div class="container"> 
+      <nav class="navbar">
+          <h1 class="logo">Glory</h1>
+          <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a class="active" href="contact.html">Contact</a></li>
+              <li><a href="project.html">Portfolio</a></li>
+             </ul>
+          <i class="fas fa-bars" id="openNav"></i>
+      </nav>
+
+      <div class="sidebar" id="sidebar">
+          <i class="fas fa-times" id="closeNav"></i>
+          <ul class="side-nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a class="active" href="contact.html">Contact</a></li>
+              <li><a href="project.html">Portfolio</a></li>
+           </ul>
+      </div>
+  </div>
+
+
+
+
+
+    <h1>CONTACT</h1> 
+    <div class="form">
+    <p class="address"> <i class="fas fa-street-view"></i> 8, Prince Oshinusi Street,<br>
+         Agbede, Ikorodu. <br> Lagos State. <br>
+    Nigeria.
+        </p>
+        <h>Or, <br> Message me here:</p>
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <br> <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your Email: <br> <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <br> <textarea name="message"></textarea></label>
+        </p>
+        <div class="button">
+           <button type="submit">Send</button> 
         </div>
-    </div>
-    
-</div>
-</footer>
+          <div>
+<div class="social-media">
+        <a href="mailto: osaiteh@gmail.com">
+            <i class="fas fa-mail-bulk"></i>
+        </a>
+        <a href=" sms: +234-907-898-4930">
+            <i class="fas fa-comments"></i>
+        </a>
+        <a href="tel:+234-907-898-4930">
+            <i class="fas fa-phone-alt"></i>
+        </a></div>
+          </div>
+      </form>
+      </div>
+      <script src="js/index.js"></script>
 </body>
 </html>

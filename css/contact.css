@@ -1,0 +1,80 @@
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.pexels.com/photos/437730/pexels-photo-437730.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    height: 100vh; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    -webkit-text-stroke: 1px rgb(241, 7, 163);
+   color: white;
+   text-shadow:
+       3px 3px 0 rgb(241, 7, 163),
+     -1px -1px 0 rgb(241, 7, 163),  
+      1px -1px 0 rgb(241, 7, 163),
+      -1px 1px 0 rgb(241, 7, 163),
+       1px 1px 0 rgb(241, 7, 163);
+}
+.address{
+    text-align: right;
+    line-height: 1.5;
+}
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    width: 28vw;
+    margin-top: 2vh;
+}
+.social-media a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.social-media a:hover{
+    color:rgb(241, 7, 163);
+}
+input, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 2px solid rgb(241, 7, 163); 
+    border-radius: 8px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+ }
+ 
+ .button{
+     display: flex;
+     align-items: flex-end;
+ }
+  button[type=submit] {
+    background-color: rgb(241, 7, 163);
+   border: 1px solid rgb(241, 7, 163);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 2px;
+    margin-left: auto; 
+    margin-bottom: 16px;
+ }
+
+ button[type=submit]:hover {
+   color:rgb(241, 7, 163);
+   background-color: transparent;
+   box-shadow: 10px 10px  rgb(241, 7, 163);
+  }
+  @media screen and (max-width: 700px){
+   body{
+       height: max-content;
+   }
+}
