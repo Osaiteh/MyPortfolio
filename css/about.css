@@ -23,53 +23,55 @@ body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('https://images.pexels.com/photos/207924/pexels-photo-207924.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
     height: 100vh; 
+    width: max-content;
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
     color: white;
     display: flex;
-    padding-right: 30vw;
-    padding-left: 30vw;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
 }
-.slide img {
+ .slide img {
     border-radius: 50%;
     animation: slide 20s infinite;
     opacity: 0;
     position: absolute; 
     border: 5px solid rgb(241, 7, 163);
+    width: 20vw;
 }
-/* .slide img:hover{
+/*.slide img:hover{
     transform:scaleX(-1);
-} */
+}*/
 .slide{
-    padding-bottom: 50%;
+    padding-bottom: 50%; 
     height: 0px;
     overflow: hidden;
+    margin-left: auto;
 }
 .slide-div{
+    width: 3vh;
+    height: 3vw;
+    align-self: center;
     margin-left: auto;
-    width: 3px;
-    height: 3px;
 }
 .name{
     animation: typing 2s steps(60,end) 1s normal both;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 20px;
+    font-size: 30px;
 }
 .track{
     animation: typing 2s steps(60,end) 4s normal both;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 24x;
+    font-size: 34x;
 }
 .skills{animation: typing 3s steps(60,end) 7s normal both;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 30px;
+    font-size: 40px;
 }
 .summarya{animation: typing 5s steps(60,end) 11s normal both;
     overflow: hidden;
@@ -92,9 +94,10 @@ body{
     body{
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
     }
     .slide.img{
-        position: unset;
+        width:150px;
     }
     .summarya{
         font-size: 12px;
@@ -102,4 +105,7 @@ body{
     .summaryb, .summaryc, .summaryd{
         font-size: 14px;
     }
+}
+.navbar{
+    color:black
 }
