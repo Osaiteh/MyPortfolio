@@ -1,0 +1,105 @@
+@keyframes slide {25%{opacity:1;} 40%{opacity:0;}}
+.slide img:nth-child(4){animation-delay:0s;}
+.slide img:nth-child(3){animation-delay:5s;}
+.slide img:nth-child(2){animation-delay:10s;}
+.slide img:nth-child(1){animation-delay:15s;}
+@keyframes colourful{
+    0%{color:red;}
+    5%{color: orangered;}
+    17%{color: orange;}
+    29%{color: yellow;}
+    41%{color: greenyellow;}
+    53%{color: rgb(70, 247, 0);}
+    65%{color: rgb(47, 255, 238);}
+    77%{color: rgb(4, 181, 252);}
+    89%{color: purple}
+    100%{color: fuchsia;}
+}
+@keyframes typing{
+    from{width: 0}
+    to{width: 100%}
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.pexels.com/photos/207924/pexels-photo-207924.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    height: 100vh; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: white;
+    display: flex;
+    padding-right: 30vw;
+    padding-left: 30vw;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.slide img {
+    border-radius: 50%;
+    animation: slide 20s infinite;
+    opacity: 0;
+    position: absolute; 
+    border: 5px solid rgb(241, 7, 163);
+}
+/* .slide img:hover{
+    transform:scaleX(-1);
+} */
+.slide{
+    padding-bottom: 50%;
+    height: 0px;
+    overflow: hidden;
+}
+.slide-div{
+    margin-left: auto;
+    width: 3px;
+    height: 3px;
+}
+.name{
+    animation: typing 2s steps(60,end) 1s normal both;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 20px;
+}
+.track{
+    animation: typing 2s steps(60,end) 4s normal both;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 24x;
+}
+.skills{animation: typing 3s steps(60,end) 7s normal both;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 30px;
+}
+.summarya{animation: typing 5s steps(60,end) 11s normal both;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.summaryb{animation: typing 4s steps(60,end) 17s normal both;
+        overflow: hidden;
+        white-space: nowrap;
+}
+.summaryc{animation: typing 4s steps(60,end) 22s normal both;
+            overflow: hidden;
+            white-space: nowrap;
+}
+
+.summaryd{animation: typing 4s steps(60,end) 27s normal both;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@media screen and (max-width: 700px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .slide.img{
+        position: unset;
+    }
+    .summarya{
+        font-size: 12px;
+    }
+    .summaryb, .summaryc, .summaryd{
+        font-size: 14px;
+    }
+}
