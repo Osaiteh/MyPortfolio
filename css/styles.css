@@ -1,3 +1,17 @@
+
+@keyframes rainbow{
+  0%{color:red;}
+  5%{color: red;}
+  17%{color: orangered;}
+  29%{color: yellow;}
+  41%{color: greenyellow;}
+  53%{color: green;}
+  65%{color: blue;}
+  77%{color: indigo;}
+  89%{color: violet;}
+  100%{color: fuchsia;}
+}
+
 ul{
     list-style: none;
   }
@@ -5,25 +19,21 @@ ul{
   a{
     text-decoration: none;
   }
-  
-  .container{
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 2rem;
-  }
+
   
   .navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 10vh;
+    border-bottom: 1px solid #fff;
+    background: white;
+    width: 100vw;
   }
   
   .navbar .logo{
-    font-size: 2.4rem;
-    color: #fff;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    display: flex;
+    flex: 0.5;
+    padding: 1vw;
   }
   
   .navbar i{
@@ -32,18 +42,26 @@ ul{
   
   .nav-links{
     display: flex;
+    flex: 0.75;
+    justify-content: space-evenly;
+    align-items: center;
   }
   
   .nav-links li a{
-    color: #fff;
     font-size: 1.1rem;
     padding: 0 1.1rem;
   }
-  
-  .nav-links li a:hover{
-    border-bottom: 1px solid #fff;
-    padding-bottom: 2px;
+
+  .nav-links li a.active{
+    font-size: 24px;
+    color: red;
   }
+  
+  .nav-links li a:hover:not(.active){
+    color: rgb(145, 145, 160);
+    text-shadow: 1px 1px 1px black;
+    font-size: 18px;
+}
   
   .sidebar{
     display: none;
@@ -58,7 +76,6 @@ ul{
   }
   
   .showcase h1{
-    color: #fff;
     letter-spacing: 2px;
     font-size: 2.2rem;
     padding: 0 2rem;
@@ -67,7 +84,6 @@ ul{
   }
   
   .showcase h3{
-    color: #f2f2f2;
     font-size: 1.6rem;
     word-spacing: 2px;
     padding: 0 2rem;
@@ -85,15 +101,13 @@ ul{
   }
   
   .btn:hover{
-    background-color: rgb(31, 118, 172);
-    color: #fff;
     transition: 0.25s ease;
   }
   
   @media(max-width: 600px){
     .navbar i{
         display: inline-block;
-        color: #fff;
+        color: rgb(241, 7, 163);
         font-size: 1.75rem;
         cursor: pointer;
     }
@@ -107,7 +121,7 @@ ul{
         position: fixed;
         top: 0;
         right: 0;
-        background-color: rgb(31, 118, 172);
+        background-color: white;
         display: inline-block;
         height: 100%;
         width: 200px;
@@ -120,7 +134,7 @@ ul{
         position: absolute;
         top: 10px;
         left: 10px;
-        color: #fff;
+        color: rgb(241, 7, 163);
         font-size: 1.75rem;
         cursor: pointer;
     }
@@ -134,12 +148,149 @@ ul{
     }
   
     .side-nav-links li a{
-        color: #fff;
+        color: rgb(241, 7, 163);
         font-size: 1.2rem;
     }
   
     .side-nav-links li a:hover{
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid rgb(241, 7, 163);
         padding-bottom: 2px;
     }
+
+    .side-nav-links li .active{
+      font-size: 24px;
+      color: red;
+    }
   }
+  /*************************|FOOTER|*************************/
+footer{
+  background-color: white;
+  height: 40vh; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  color:  rgb(241, 7, 163);
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  margin-top: 5vh;
+}
+.left-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  border: 2px 0 blue;
+}
+.left-footer-link{
+  flex: 1;
+  border: 2px solid black;
+  border-top: 0;
+  text-align: center;
+  font-size: 22px;
+}
+.left-footer-text{
+   display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+  text-align: center;
+  color:  rgb(241, 7, 163);
+}
+.left-footer-name{
+  border: 2px solid black;
+  flex: 1;
+}
+.left-footer-copyright{
+  border: 2px solid black;
+  flex: 1.5;
+}
+.right-footer{
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  flex-direction: column;
+}
+.right-footer-menu{
+  display: flex;
+  flex: 1;
+}
+.right-footer-menu-div{
+  justify-content: center;
+  flex: 2;
+}
+.right-footer-menu-items{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  margin: 0.25vw;
+  font-size: 1.75vw;
+  border-bottom: 1px solid black;
+  font-size: 3wv;
+}
+.right-footer-menu-items > a{
+  font-size: 20px;
+  color:  rgb(241, 7, 163);
+}
+.right-footer-form{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.15vw;
+  border-bottom: 1px solid black;
+  flex: 1;
+  border: 1px solid black;
+  background-color: black;
+  font-weight: bolder;
+  color: white;
+}
+.right-footer-form:hover{
+  border: 1px solid black;
+  background-color: white;
+  font-weight: bolder;
+  color: black;
+  box-shadow: 10px 0px 10px 10px black;
+}
+.right-footer-div{
+  justify-content: center;
+  border-bottom: 2px solid black;
+  flex: 2;
+}
+.right-footer-link-items{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  font-size: 3vw;
+  margin: 0.25vw;
+  color: white;
+}
+.footer-form{
+  text-align: center;
+
+}
+.right-footer-form-items  p{
+  font-size: 1vw;
+  font-weight: bold;
+  line-height: 0.5;
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+.twitter{
+  color: red;
+  animation-delay: 3s;
+  animation-name: rainbow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.linkedin{
+  color: red;
+  animation-delay: 2s;
+  animation-name: rainbow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.github{
+  color: red;
+  animation-delay: 1s;
+  animation-name: rainbow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}

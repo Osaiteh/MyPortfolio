@@ -31,16 +31,16 @@ body{
     background-color: transparent;
     color: white;
 }
-.container a{
+.pcontainer a{
     color: red;
     text-decoration: none;
 }
-.container a:hover{
+.pcontainer a:hover{
     color: red;
     color: rgb(0, 255, 157);
     text-decoration: underline;
 }
-.container{
+.pcontainer{
     margin: 2vw;
     flex-wrap: wrap;
     text-align: center;
