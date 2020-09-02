@@ -198,98 +198,47 @@ transform: translateX(-100%);
   justify-content: center;
   align-items: center;
 }
-.moments h1{
-  font-size: 40px;
-  color: rgb(241, 7, 163);
-}
-.slider {
-  width: 300px;
-  text-align: center;
-  overflow: hidden;
+html {
+  box-sizing: border-box;
 }
 
-.slides {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-.slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.slides::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-}
-.slides::-webkit-scrollbar-track {
-  background: transparent;
-}
-.slides > div {
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  width: 300px;
-  height: 300px;
-  margin-right: 50px;
-  border-radius: 10px;
-  background: #eee;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  position: relative;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
-}
-.slides > div:target {
-  transform: scale(0.8);
-}
-.author-info {
-  background: rgba(0, 0, 0, 0.75);
-  color: white;
-  padding: 0.75rem;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-}
-.author-info a {
-  color: white;
-}
-img {
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-.slider > a {
-  display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: white;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 0 0 0.5rem 0;
-  position: relative;
+/* The Masonry Container */
+.masonry {
+  margin: 1.5em auto;
+  max-width: 768px;
+  column-gap: 1.5em;
 }
-.slider > a:active {
-  top: 1px;
+
+/* The Masonry Brick */
+.item {
+  background: #fff;
+  padding: 1em;
+  margin: 0 0 1.5em;
 }
-.slider > a:focus {
-  background: #000;
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+  }
 }
-@supports (scroll-snap-type) {
-  .slider > a {
-    display: none;
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
   }
 }
