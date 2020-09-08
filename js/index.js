@@ -1,26 +1,15 @@
-
-const btn = document.getElementById('btn');
-const sidebar = document.getElementById('sidebar');
-const openNav = document.getElementById('openNav');
-const closeNav = document.getElementById('closeNav');
-
-
-// Open navbar
-const openNavbar = () => {
-    sidebar.style.visibility = 'visible';
-}
-
-// Close navbar
-const closeNavbar = () => {
-    sidebar.style.visibility = 'hidden';
-}
-
-
-// Event listeners
-openNav.addEventListener('click', openNavbar);
-closeNav.addEventListener('click', closeNavbar);
-window.addEventListener('click', e => {
-    if (e.target === modal) {
-        modal.style.display = 'none';
-    }
+// Hamburger Menu
+const hamburger = document.querySelector(".hamburger-box");
+const nav = document.querySelector(".nav-list");
+let menuOpen = false;
+hamburger.addEventListener("click", () => {
+  if (!menuOpen) {
+    hamburger.classList.add("open");
+    nav.classList.add("show");
+    menuOpen = true;
+  } else {
+    hamburger.classList.remove("open");
+    nav.classList.remove("show");
+    menuOpen = false;
+  }
 });
