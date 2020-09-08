@@ -1,26 +1,41 @@
-
+:root{
+    --white-color:#edf8f8;
+    --primary-color:#b7e1e4;
+    --secondary-color:#5ab9c1;
+    --black-color:#2e4347;
+  }
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('https://images.pexels.com/photos/437730/pexels-photo-437730.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
-    height: 100vh; 
+    
+    height: auto; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
-    color: white;
+    color: var(--black-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--primary-color);
+}
+p{
+    font-size: 25px;
+}
+.form{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin: 2vw;
+    width: 60vw;
 }
 h1{
-    -webkit-text-stroke: 1px rgb(241, 7, 163);
-   color: white;
+    -webkit-text-stroke: 1px var(--black-color);
+   color: var(--black-color);
+   font-size: 55px;
    text-shadow:
-       3px 3px 0 rgb(241, 7, 163),
-     -1px -1px 0 rgb(241, 7, 163),  
-      1px -1px 0 rgb(241, 7, 163),
-      -1px 1px 0 rgb(241, 7, 163),
-       1px 1px 0 rgb(241, 7, 163);
+       3px 3px 0 var(--secondary-color),
+     -1px -1px 0 var(--secondary-color),  
+      1px -1px 0 var(--secondary-color),
+      -1px 1px 0 var(--secondary-color),
+       1px 1px 0 var(--secondary-color);
+       align-self: center;
 }
 .address{
     text-align: right;
@@ -28,25 +43,24 @@ h1{
 }
 .social-media{
     display: flex;
-    justify-content: space-around;
-    width: 28vw;
+    justify-content: space-evenly;
     margin-top: 2vh;
 }
 .social-media a{
     text-decoration: none;
-    color: white;
-    font-size: 25px;
+    color: var(--white-color);
+    font-size: 35px;
     margin: 20px;
     padding: 10px;
 }
 
 .social-media a:hover{
-    color:rgb(241, 7, 163);
+    color:var(--black-color);
 }
 input, textarea {
     width: 100%;
     padding: 12px; 
-    border: 2px solid rgb(241, 7, 163); 
+    border: 2px solid var(--secondary-color); 
     border-radius: 8px; 
     box-sizing: border-box;
     margin-top: 6px; 
@@ -58,20 +72,20 @@ input, textarea {
      display: flex;
      align-items: flex-end;
  }
-  button[type=submit] {
-    background-color: rgb(241, 7, 163);
-   border: 1px solid rgb(241, 7, 163);
-    color: white;
+  button[type=go] {
+    background-color: var(--secondary-color);
+   border: 1px solid var(--black-color);
+    color: var(--black-color);
     padding: 12px 20px;
     border-radius: 2px;
     margin-left: auto; 
     margin-bottom: 16px;
  }
 
- button[type=submit]:hover {
-   color:rgb(241, 7, 163);
+ button[type=go]:hover {
+   color:var(--black-color);
    background-color: transparent;
-   box-shadow: 10px 10px  rgb(241, 7, 163);
+   box-shadow: 3px 3px  var(--black-color);
   }
   @media screen and (max-width: 700px){
    body{

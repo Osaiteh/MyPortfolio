@@ -3,18 +3,7 @@
 .slide img:nth-child(3){animation-delay:5s;}
 .slide img:nth-child(2){animation-delay:10s;}
 .slide img:nth-child(1){animation-delay:15s;}
-@keyframes colourful{
-    0%{color:red;}
-    5%{color: orangered;}
-    17%{color: orange;}
-    29%{color: yellow;}
-    41%{color: greenyellow;}
-    53%{color: rgb(70, 247, 0);}
-    65%{color: rgb(47, 255, 238);}
-    77%{color: rgb(4, 181, 252);}
-    89%{color: purple}
-    100%{color: fuchsia;}
-}
+
 @keyframes typing{
     from{width: 0}
     to{width: 100%}
@@ -107,5 +96,5 @@ body{
     }
 }
 .navbar{
-    color:black
+    color:black;
 }
