@@ -12,66 +12,87 @@
 </head>
 
 <body>
-    <header class="header">
-
+    <div class="navbar">
         <div class="container">
-            <nav class="navbar">
-                <h1 class="logo">Glory</h1>
-                <ul class="nav-links">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about.html">About </a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="project.html">Portfolio</a></li>
-                </ul>
-                <i class="fas fa-bars" id="openNav"></i>
-            </nav>
-
-            <div class="sidebar" id="sidebar">
-                <i class="fas fa-times" id="closeNav"></i>
-                <ul class="side-nav-links">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about.html">About </a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="project.html">Portfolio</a></li>
-                </ul>
+            <div class="logo">
+                Glory
+                <button type="button" class="hamburger" aria-label="Toggle Navigation">
+                    <span class="hamburger-box">
+                        <span class="hamburger-list hamburger-list1"></span>
+                        <span class="hamburger-list hamburger-list2"></span>
+                        <span class="hamburger-list hamburger-list3"></span>
+                    </span>
+                </button>
             </div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-items">
+                        <a class="active" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="project.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <header>
+    </div>
+
+
+     <header>
             <p class="typing">
                 Hi there!
             </p>
             <p>
-                My name is Glory.
-                <br> I'm a Frontend Developer. <br>
-                I often make silly videos on the internet, <br>
-                I enjoy listening to music, watching movies, <br>
-                and baking in my free time.
-            </p>
-            <a href="#marquee">Keep going</a>
-        </header>
+                My name is Glory Ogbebor. 
+                I'm a Web Developer who works mainly in the backend track
+                 but I'm not limited to that. 
+                This website was built by me. <br> <br>
 
 
-        <div id="testimonials">
-            <div id="marquee" class="marquee">
-                <p>#Testimonial:WhatTheySayAboutMe:</p>
-               <div class="testimony">
-                   <img src="assets/images/mebude.JPEG" alt=""> </a>
-                       <p>
-                        I have known Glory to be a very warm and <br>
-                         cooperative fellow. <br> 
-                         She gets passionate about what she does <br>
-                          and gives her best shot towards it. <br>
-                           She has a good heart. <br>
-                            She also loves and values people. <br>
-                             I wholeheartedly recommend her for any opportunity <br>
-                              she is passionate about.
-                       </p>
-               </div>
-            </div>
-        </div>
+                I'm presently a Fellow at TIIDELab 
+                and my most recent project was with a team of Developers. 
+                We built an email marketing tool.<br> <br>
+                
+                I believe in technology. 
+                I believe work doesn't always have to be hard. 
+                It just have to be smart to achieve great success. 
+                With every Software I develop, 
+                I solve that problem and so many more.<br> <br>
+                
+                Aside being a Software Developer, 
+                I enjoy writing, baking, watching movies 
+                and playing games.<br> <br></p>
+            <a href="#testimonials">Keep going</a>
+      
+</header> 
 
-        <div class="main-div">
+    <header id="testimonials">
+            <h1>Testimonial: What They Say About Me:</h1>
+<div class="card">
+    <img src="assets/images/mebude.JPEG" alt="John" style="width:100%">
+    <h1>Moyosore Mebude</h1>
+    <p class="title">Sales Representative at LinkedIn Learning</p>
+    <p class="testimony"> I have known Glory to be a very warm and
+        cooperative fellow.<br>
+        She gets passionate about what she does
+         and gives her best shot towards it.
+          She has a good heart.
+           She also loves and values people.  <br>
+            I wholeheartedly recommend her for any opportunity 
+            she is passionate about.
+      </p>
+    
+  </div>
 
+</header>       
+
+    <header>
             <div class="left-div">
                 <h1 class="skills-topic">
                     Skills
@@ -98,80 +119,151 @@
                         <p> Projects</p>
                     </div>
                 </section>
+</header> 
 
+
+    <header>
+<h1>MOMENTS</h1>
+        <div class="imgcontainer">
+            <div class="top">
+                <ul>
+                    <li>
+                        <a href="#img1">
+                            <img src='assets/images/grid1.JPEG' /></a></li>
+
+                    <li>
+                        <a href="#img2">
+                            <img src='assets/images/grid2.jpg' /></a></li>
+
+                    <li>
+                        <a href="#img3">
+                            <img src='assets/images/grid3.JPEG' /></a></li>
+
+                    <li>
+                        <a href="#img4">
+                            <img src='assets/images/grid4.JPEG' /></a>
+                    </li>
+
+                    <li>
+                        <a href="#img5">
+                            <img src='assets/images/grid5.JPEG' /></a>
+                    </li>
+
+                    <li>
+                        <a href="#img6">
+                            <img src='assets/images/grid6.jpg' /></a>
+                    </li>
+
+                    <li>
+                        <a href="#img7">
+                            <img src='assets/images/grid7.jpg' /></a>
+                    </li>
+                </ul>
+
+                <a href="#1" class="imglink" id="img1">
+                    <img src="assets/images/grid1.JPEG">
+                </a>
+
+                <a href="#2" class="imglink" id="img2">
+                    <img src="assets/images/grid2.jpg">
+                </a>
+
+                <a href="#3" class="imglink" id="img3">
+                    <img src="assets/images/grid3.JPEG">
+                </a>
+
+                <a href="#4" class="imglink" id="img4">
+                    <img src="assets/images/grid4.JPEG">
+                </a>
+
+                <a href="#5" class="imglink" id="img5">
+                    <img src="assets/images/grid5.JPEG">
+                </a>
+
+                <a href="#6" class="imglink" id="img6">
+                    <img src="assets/images/grid6.jpg">
+                </a>
+
+                <a href="#7" class="imglink" id="img7">
+                    <img src="assets/images/grid7.jpg">
+                </a>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <footer>
+            <div class="footer-link">
+                <p>
+                    Let's make something amazing together.
+                </p>
+                <p>
+                    Start by
+                    <span>
+                        <a href="mailto:osaiteh@gmail.com">
+                            saying hi
+                        </a>
+                    </span>
+                </p>
             </div>
 
+    
+        <div class="text-footer">
+            <div class="text-footer-text">
+                <div class="text-footer-name">
+                    <p>
+                        <span>
+                            Glory
+                        </span>
+                        Ogbebor
+                    </p>
+                </div>
+                <div class="textt-footer-copyright">
+                    <p>
+                        &copy; 2020. All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
 
 
+        
+            
+                <div class="footer-menu-items">
+                    <a class="active" href="index.html"><i class="fas fa-home"></i> &nbsp; HOME</a>
+                    <a  href="about.html"><i class="far fa-question-circle"></i> &nbsp; ABOUT</a>
+                    <a href="contact.html"><i class="far fa-address-card"></i> &nbsp; CONTACT</a>
+                    <a href="project.html"><i class="far fa-folder"></i> &nbsp; PROJECTS</a>
+                    <a href="#testimonials"><i class="fas fa-certificate">  &nbsp; testimonials</i></a>
+                </div>
+            
 
-
-            <footer>
-                <div class="left-footer">
-                    <div class="left-footer-link">
-                        <p>
-                            Let's make something amazing together.
-                        </p>
-                        <p>
-                            Start by
-                            <span>
-                                <a href="mailto:osaiteh@gmail.com">
-                                    saying hi
-                                </a>
-                            </span>
-                        </p>
-                    </div>
-                    <div class="left-footer-text">
-                        <div class="left-footer-name">
-                            <p>
-                                <span>
-                                    Glory
-                                </span>
-                                Ogbebor
-                            </p>
-                        </div>
-                        <div class="left-footer-copyright">
-                            <p>
-                                &copy; 2020. All rights reserved
-                            </p>
-                        </div>
+            
+                <div class="footer-form-items">
+                    <p>Stay Updated</p>
+                    <p>Subscribe to our newsletter to get our latest news</p>
+                    <div class="footer-form">
+                        <input type="email" class="footer-form-input-one" name="email" placeholder="Email address">
+                        <button type="submit">Subscribe!</button>
                     </div>
                 </div>
 
-                <div class="right-footer">
-                    <div class="right-footer-menu-div">
-                        <div class="right-footer-menu-items">
-                            <a href="index.html"><i class="fas fa-home"></i> &nbsp; home</a>
-                            <a class="active" href="about.html"><i class="far fa-question-circle"></i>about</a>
-                            <a href="contact.html"><i class="far fa-address-card"></i>contact</a>
-                            <a href="project.html"><i class="far fa-folder"></i>projects</a>
-                            <a href="index.html#testimonials"><i class="fas fa-certificate"> testimonials</i></a>
-                        </div>
-                    </div>
-                    <div class="right-footer-form">
-                        <div class="right-footer-form-items">
-                            <p>Stay Updated</p>
-                            <p>Subscribe to our newsletter to get our latest news</p>
-                            <div class="footer-form">
-                                <input type="email" class="footer-form-input-one" name="email"
-                                    placeholder="Email address">
-                                <button type="submit">Subscribe!</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="right-footer-div">
-                        <div class="right-footer-link-items">
-                            <a class="linkedin" href="https://www.linkedin.com/in/osaiteh"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="github" href="https://github.com/Osaiteh"><i class="fab fa-github"></i></a>
-                            <a class="twitter" href="https://twitter.com/osaiteh"> <i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-
+            
+                <div class="social-footer-link">
+                    <a class="linkedin" href="https://www.linkedin.com/in/osaiteh"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="github" href="https://github.com/Osaiteh"><i class="fab fa-github"></i></a>
+                    <a class="twitter" href="https://twitter.com/osaiteh"> <i class="fab fa-twitter"></i></a>
                 </div>
-            </footer>
+            
 
-            <script src="js/index.js"></script>
+        
+    </footer>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>

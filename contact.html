@@ -11,38 +11,43 @@
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                Glory
+                <button type="button" class="hamburger" aria-label="Toggle Navigation">
+                    <span class="hamburger-box">
+                        <span class="hamburger-list hamburger-list1"></span>
+                        <span class="hamburger-list hamburger-list2"></span>
+                        <span class="hamburger-list hamburger-list3"></span>
+                    </span>
+                </button>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-items">
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="project.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="active" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
 
-  <div class="container"> 
-      <nav class="navbar">
-          <h1 class="logo">Glory</h1>
-          <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a class="active" href="contact.html">Contact</a></li>
-              <li><a href="project.html">Portfolio</a></li>
-             </ul>
-          <i class="fas fa-bars" id="openNav"></i>
-      </nav>
 
-      <div class="sidebar" id="sidebar">
-          <i class="fas fa-times" id="closeNav"></i>
-          <ul class="side-nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a class="active" href="contact.html">Contact</a></li>
-              <li><a href="project.html">Portfolio</a></li>
-           </ul>
-      </div>
-  </div>
-
-
-
-
-
-    <h1>CONTACT</h1> 
+ 
     <div class="form">
-    <p class="address"> <i class="fas fa-street-view"></i> 8, Prince Oshinusi Street,<br>
+    <h1>CONTACT</h1>
+    <p class="address"> <i class="fas fa-street-view"></i>
          Agbede, Ikorodu. <br> Lagos State. <br>
     Nigeria.
         </p>
@@ -58,7 +63,7 @@
           <label>Message: <br> <textarea name="message"></textarea></label>
         </p>
         <div class="button">
-           <button type="submit">Send</button> 
+           <button type="go">Send</button> 
         </div>
           <div>
 <div class="social-media">
@@ -76,69 +81,74 @@
       </div>
       <script src="js/index.js"></script>
       
-<footer>
-  <div class="left-footer">
-      <div class="left-footer-link">
-          <p>
-              Let's make something amazing together.
-          </p>
-          <p>
-              Start by 
-              <span>
-                  <a href="mailto:osaiteh@gmail.com">
-                      saying hi
-                  </a>
-              </span>
-          </p>
-      </div>
-      <div class="left-footer-text">
-          <div class="left-footer-name">
-              <p>
-                  <span>
-                      Glory
-                  </span>
-                  Ogbebor
-              </p>
-          </div>
-          <div class="left-footer-copyright">
-              <p>
-                  &copy; 2020. All rights reserved
-              </p>
-          </div>
-      </div>
-  </div>
+      <footer>
+        <div class="footer-link">
+            <p>
+                Let's make something amazing together.
+            </p>
+            <p>
+                Start by
+                <span>
+                    <a href="mailto:osaiteh@gmail.com">
+                        saying hi
+                    </a>
+                </span>
+            </p>
+        </div>
 
-  <div class="right-footer">
-      <div class="right-footer-menu-div">
-          <div class="right-footer-menu-items">
-              <a href="index.html"><i class="fas fa-home"></i> &nbsp; home</a>
-              <a class="active" href="about.html"><i class="far fa-question-circle"></i>about</a>
-              <a href="contact.html"><i class="far fa-address-card"></i>contact</a>
-              <a href="project.html"><i class="far fa-folder"></i>projects</a>
-              <a href="index.html#testimonials"><i class="fas fa-certificate"> testimonials</i></a>  
-          </div>
-      </div>
-      <div class="right-footer-form">
-          <div class="right-footer-form-items">
-               <p>Stay Updated</p>
-              <p>Subscribe to our newsletter to get our latest news</p>
-              <div class="footer-form">
-                  <input type="email" class="footer-form-input-one" name="email" placeholder="Email address">
-                 <button type="submit">Subscribe!</button>
-              </div>
-          </div> 
-      </div>
 
-  <div class="right-footer-div">
-      <div class="right-footer-link-items">
-          <a class="linkedin" href="https://www.linkedin.com/in/osaiteh"><i class="fab fa-linkedin-in"></i></a>
-          <a class="github" href="https://github.com/Osaiteh"><i class="fab fa-github"></i></a>
-          <a class="twitter" href="https://twitter.com/osaiteh"> <i class="fab fa-twitter"></i></a>
-      </div>
-  </div>
-  
-</div>
+    <div class="text-footer">
+        <div class="text-footer-text">
+            <div class="text-footer-name">
+                <p>
+                    <span>
+                        Glory
+                    </span>
+                    Ogbebor
+                </p>
+            </div>
+            <div class="textt-footer-copyright">
+                <p>
+                    &copy; 2020. All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    
+        
+            <div class="footer-menu-items">
+                <a href="index.html"><i class="fas fa-home"></i> &nbsp; HOME</a>
+                <a  href="about.html"><i class="far fa-question-circle"></i> &nbsp; ABOUT</a>
+                <a class="active" href="contact.html"><i class="far fa-address-card"></i> &nbsp; CONTACT</a>
+                <a href="project.html"><i class="far fa-folder"></i> &nbsp; PROJECTS</a>
+            </div>
+        
+
+        
+            <div class="footer-form-items">
+                <p>Stay Updated</p>
+                <p>Subscribe to our newsletter to get our latest news</p>
+                <div class="footer-form">
+                    <input type="email" class="footer-form-input-one" name="email" placeholder="Email address">
+                    <button type="submit">Subscribe!</button>
+                </div>
+            </div>
+
+        
+            <div class="social-footer-link">
+                <a class="linkedin" href="https://www.linkedin.com/in/osaiteh"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="github" href="https://github.com/Osaiteh"><i class="fab fa-github"></i></a>
+                <a class="twitter" href="https://twitter.com/osaiteh"> <i class="fab fa-twitter"></i></a>
+            </div>
+        
+
+    
 </footer>
 
+<script src="js/index.js"></script>
 </body>
+
 </html>
