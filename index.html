@@ -1,269 +1,235 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Sticky Footer Navbar Template · Bootstrap</title>
+<link rel="stylesheet" href="style.css">
+<link href="asset/css/all.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap.min.css" rel="stylesheet">
 
-</head>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-<body>
-    <div class="navbar">
-        <div class="container">
-            <div class="logo">
-                Glory
-                <button type="button" class="hamburger" aria-label="Toggle Navigation">
-                    <span class="hamburger-box">
-                        <span class="hamburger-list hamburger-list1"></span>
-                        <span class="hamburger-list hamburger-list2"></span>
-                        <span class="hamburger-list hamburger-list3"></span>
-                    </span>
-                </button>
-            </div>
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-items">
-                        <a class="active" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="project.html">PROJECTS</a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="contact.html">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Osaiteh</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Project</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Enter Your Email" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Subscribe</button>
+      </form>
     </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+
+<main role="main" class="flex-shrink-0">
+  <section id="home" class="banner">
+  <div class="container">
+    <h2>Hi there!  I'm <br><span>Ogbebor Glory</span></h2>
+                <h3>I am a Software Developer</h3>
+                <a href="asset/OgbeborGlory.pdf" target="blank"class="btn">Hire Me</a>
+                <a href="#contact" target="blank" class="btn">Contact Me</a>
+  </div>
+</section>
+
+<section id="about" class="banner">
+  
+<p>
+    My name is Glory Ogbebor. 
+    I'm a Web Developer who works mainly in the backend track
+     but I'm not limited to that. 
+    This website was built by me. <br> <br>
 
 
-     <header>
-            <p class="typing">
-                Hi there!
-            </p>
-            <p>
-                My name is Glory Ogbebor. 
-                I'm a Web Developer who works mainly in the backend track
-                 but I'm not limited to that. 
-                This website was built by me. <br> <br>
-
-
-                I'm presently a Fellow at TIIDELab 
-                and my most recent project was with a team of Developers. 
-                We built an email marketing tool.<br> <br>
-                
-                I believe in technology. 
-                I believe work doesn't always have to be hard. 
-                It just have to be smart to achieve great success. 
-                With every Software I develop, 
-                I solve that problem and so many more.<br> <br>
-                
-                Aside being a Software Developer, 
-                I enjoy writing, baking, watching movies 
-                and playing games.<br> <br></p>
-            <a href="#testimonials">Keep going</a>
-      
-</header> 
-
-    <header id="testimonials">
-            <h1>Testimonial: What They Say About Me:</h1>
-<div class="card">
-    <img src="assets/images/mebude.JPEG" alt="John" style="width:100%">
-    <h1>Moyosore Mebude</h1>
-    <p class="title">Sales Representative at LinkedIn Learning</p>
-    <p class="testimony"> I have known Glory to be a very warm and
-        cooperative fellow.<br>
-        She gets passionate about what she does
-         and gives her best shot towards it.
-          She has a good heart.
-           She also loves and values people.  <br>
-            I wholeheartedly recommend her for any opportunity 
-            she is passionate about.
-      </p>
+    I'm presently a Fellow at TIIDELab 
+    and my most recent project was with a team of Developers. 
+    We built an email marketing tool.<br> <br>
     
+    I believe in technology. 
+    I believe work doesn't always have to be hard. 
+    It just have to be smart to achieve great success. 
+    With every Software I develop, 
+    I solve that problem and so many more.<br> <br>
+    
+    Aside being a Software Developer, 
+    I enjoy writing, baking, watching movies 
+    and playing games.</p>
+</section>
+
+<section class="services" id="services">
+  <div class="heading white">
+      <h2>What I DO</h2>
+      <p>My Skills</p>
+  </div>
+  <div class="content">
+      <div class="servicesBx">
+        <i class="fas fa-laptop-code"></i>
+          <h2>Web Design </h2>
+          <p>HTML, CSS, JavaScript, Bootstrap.
+            I can design a website that has full cross-browser compatibilty, that is dynamic and is responsive across different screens.</p>
+
+      </div>
+      <div class="servicesBx">
+        <i class="fas fa-puzzle-piece"></i>
+          <h2>Problem Solving</h2>
+          <p>Thinking to create a modern, creative and scalable solution</p>
+
+      </div>
+      <div class="servicesBx">
+        <i class="fas fa-mobile-alt"></i>
+          <h2>Android Applications</h2>
+          <p>Java, Flutter, Dart, Android Studio and Firebase. A Beginner's knowledge of Java and Flutter for Android Apps. </p>
+
+      </div>
+      <div class="servicesBx"> 
+        <i class="fas fa-code-branch"></i>
+          <h2>Collaboration & Version Control</h2>
+          <p>Git. Ability to work with a team of people to achieve a common goal. Able to use git for collaboration</p>
+
+      </div>
+  </div>
+</section>
+
+
+<section class="banner"></section>
+
+
+<section class="banner">
+  <div class="heading">
+    <h2>My Latest Projects</h2>
+</div>
+<div class="content">
+    <p class="summarya">
+        <em>Every great project begins with an even better story</em>
+    </p>
+    <p class="summaryb">
+        I am quietly confident, naturally curious
+            and perpetually working on improving my skills, 
+            a website at a time.
+        </p>
+    <div class="projectBx">
+        <a target="_blank" href="https://vavot.netlify.app/" target="_blank"> <img src="vavot.PNG"></a>
+    </div>
+    <div class="projectBx">
+        <a href="https://chinedusignupform.netlify.app/" target="_blank"> <img src="signup.PNG"></a>
+    </div>
+    <div class="projectBx">
+        <a href="https://chineduportfolio.netlify.app/" target="_blank"><img src="porfolio.PNG"></a>
+    </div>
+    <div class="projectBx">
+        <a href="https://chineduportfolio.netlify.app/" target="_blank"><img src="hireme.PNG"></a>
+    </div>
+</div>
+<div class="heading">
+    <a href="#"class="btn">View More</a>
+</div>
+</section>
+
+
+<section class="banner">
+  <h2>Contact Me</h2>
+            <p>Thank you for visiting my page, you can drop your message here.</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                       <h3>Phone</h3> 
+                       <p>+2349078984930</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                       <h3>Email</h3> 
+                       <p>osaiteh@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="formBx">
+            <form class="form" method="POST" name="Contact Me" data-netlify="true">  
+                <h3>Message Me</h3>
+                <input type="text" name="" placeholder="Full Name" required>
+                <input type="email" name="" placeholder="Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+</section>
+
+
+</main>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <div class="footer-container">
+      <div class="left-col">
+          <img src="" alt="" class="footer-logo">
+           <div class="footer-social">
+               <a href="#"><i class="fa fa-medium" aria-hidden="true"></i></a>
+               <a href="https://www.linkedin.com/in/osaiteh"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+               <a href="https://twitter.com/osaiteh"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+               <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+               <a href="https://github.com/Osaiteh"><i class="fa fa-github" aria-hidden="true"></i></a>
+           </div>
+           </div>
+           
   </div>
 
-</header>       
 
-    <header>
-            <div class="left-div">
-                <h1 class="skills-topic">
-                    Skills
-                </h1>
-                <section class="skills-card">
-
-                    <div class="skill-card one">
-                        <h4><span class="skill-number"> 3 </span>HTML</h4>
-                        <p> Projects</p>
-                    </div>
-
-                    <div class="skill-card two">
-                        <h4><span class="skill-number"> 3 </span>CSS</h4>
-                        <p> Projects</p>
-                    </div>
-
-                    <div class="skill-card three">
-                        <h4><span class="skill-number"> 3 </span>JavaScript</h4>
-                        <p> Projects</p>
-                    </div>
-
-                    <div class="skill-card four">
-                        <h4><span class="skill-number"> 9 </span>Version Control: Git</h4>
-                        <p> Projects</p>
-                    </div>
-                </section>
-</header> 
-
-
-    <header>
-<h1>MOMENTS</h1>
-        <div class="imgcontainer">
-            <div class="top">
-                <ul>
-                    <li>
-                        <a href="#img1">
-                            <img src='assets/images/grid1.JPEG' /></a></li>
-
-                    <li>
-                        <a href="#img2">
-                            <img src='assets/images/grid2.jpg' /></a></li>
-
-                    <li>
-                        <a href="#img3">
-                            <img src='assets/images/grid3.JPEG' /></a></li>
-
-                    <li>
-                        <a href="#img4">
-                            <img src='assets/images/grid4.JPEG' /></a>
-                    </li>
-
-                    <li>
-                        <a href="#img5">
-                            <img src='assets/images/grid5.JPEG' /></a>
-                    </li>
-
-                    <li>
-                        <a href="#img6">
-                            <img src='assets/images/grid6.jpg' /></a>
-                    </li>
-
-                    <li>
-                        <a href="#img7">
-                            <img src='assets/images/grid7.jpg' /></a>
-                    </li>
-                </ul>
-
-                <a href="#1" class="imglink" id="img1">
-                    <img src="assets/images/grid1.JPEG">
-                </a>
-
-                <a href="#2" class="imglink" id="img2">
-                    <img src="assets/images/grid2.jpg">
-                </a>
-
-                <a href="#3" class="imglink" id="img3">
-                    <img src="assets/images/grid3.JPEG">
-                </a>
-
-                <a href="#4" class="imglink" id="img4">
-                    <img src="assets/images/grid4.JPEG">
-                </a>
-
-                <a href="#5" class="imglink" id="img5">
-                    <img src="assets/images/grid5.JPEG">
-                </a>
-
-                <a href="#6" class="imglink" id="img6">
-                    <img src="assets/images/grid6.jpg">
-                </a>
-
-                <a href="#7" class="imglink" id="img7">
-                    <img src="assets/images/grid7.jpg">
-                </a>
-                <ul>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-
-
-    <footer>
-            <div class="footer-link">
-                <p>
-                    Let's make something amazing together.
-                </p>
-                <p>
-                    Start by
-                    <span>
-                        <a href="mailto:osaiteh@gmail.com">
-                            saying hi
-                        </a>
-                    </span>
-                </p>
-            </div>
-
-    
-        <div class="text-footer">
-            <div class="text-footer-text">
-                <div class="text-footer-name">
-                    <p>
-                        <span>
-                            Glory
-                        </span>
-                        Ogbebor
-                    </p>
-                </div>
-                <div class="textt-footer-copyright">
-                    <p>
-                        &copy; 2020. All rights reserved
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-        
-            
-                <div class="footer-menu-items">
-                    <a class="active" href="index.html"><i class="fas fa-home"></i> &nbsp; HOME</a>
-                    <a  href="about.html"><i class="far fa-question-circle"></i> &nbsp; ABOUT</a>
-                    <a href="contact.html"><i class="far fa-address-card"></i> &nbsp; CONTACT</a>
-                    <a href="project.html"><i class="far fa-folder"></i> &nbsp; PROJECTS</a>
-                    <a href="#testimonials"><i class="fas fa-certificate">  &nbsp; testimonials</i></a>
-                </div>
-            
-
-            
-                <div class="footer-form-items">
-                    <p>Stay Updated</p>
-                    <p>Subscribe to our newsletter to get our latest news</p>
-                    <div class="footer-form">
-                        <input type="email" class="footer-form-input-one" name="email" placeholder="Email address">
-                        <button type="submit">Subscribe!</button>
-                    </div>
-                </div>
-
-            
-                <div class="social-footer-link">
-                    <a class="linkedin" href="https://www.linkedin.com/in/osaiteh"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a class="github" href="https://github.com/Osaiteh"><i class="fab fa-github"></i></a>
-                    <a class="twitter" href="https://twitter.com/osaiteh"> <i class="fab fa-twitter"></i></a>
-                </div>
-            
-
-        
-    </footer>
-
-    <script src="js/index.js"></script>
-</body>
-
+<div class="copywrite">
+<p>Ogbebor Glory &copy; 2020. All Right Reserved.</p>
+</div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </html>
