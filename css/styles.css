@@ -39,6 +39,7 @@ header{
   display: flex;
   flex-direction: column;
   border-bottom: 5px double var(--secondary-color);
+  webkistick
 }
 
 
