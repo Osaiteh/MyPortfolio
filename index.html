@@ -13,25 +13,39 @@
   <body class="d-flex flex-column h-100">
     <header>
 
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-          <p><strong>Osaiteh</strong></p>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </div>
+      <header class="navbar fixed-top scrolling-navbar">
+        <div class="container">
+          <div class="logo">
+            <p>MartReach</p>
+            <button type="button" class="hamburger" aria-label="Toggle Navigation">
+              <span class="hamburger-box">
+                <span class="hamburger-list hamburger-list1"></span>
+                <span class="hamburger-list hamburger-list2"></span>
+                <span class="hamburger-list hamburger-list3"></span>
+              </span>
+            </button>
           </div>
-      </nav>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-items">
+                <a href="#home">Home</a>
+              </li>
+              <li class="nav-items">
+                <a href="#about">About</a>
+              </li>
+              <li class="nav-items">
+                <a href="#skills">Skills</a>
+              </li>
+              <li class="nav-items">
+                <a href="#projects">Project</a>
+              </li>
+              <li class="nav-items">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
   <!-- Fixed navbar -->
  
 <!-- Begin page content -->
@@ -70,7 +84,7 @@
     I enjoy writing, baking, watching movies 
     and playing games.</p>
 </section>
-<section class="services" id="services">
+<section class="services" id="skills">
   <div class="heading">
       <h2>What I Do</h2>
       <p>My Skills</p>
@@ -105,7 +119,7 @@
 </section>
 
 
-<section class="banner">
+<section class="banner" id="projects">
   <div class="project-Div">
   <div class="heading">
     <h2>My Projects</h2>
@@ -163,7 +177,7 @@
 </section>
 
 
-<section class="banner">
+<section class="banner" id="contact">
   <div class="contact">
     <h2>Contact Me</h2>
             <p>Thank you for visiting my page, you can drop your message here.</p>
