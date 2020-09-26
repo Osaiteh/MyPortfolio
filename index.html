@@ -2,68 +2,38 @@
 <html lang="en" class="h-100">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.1.1">
-    <title>Sticky Footer Navbar Template · Bootstrap</title>
+    <title>Ogbebor Glory | Portfolio</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link href="asset/css/all.css" rel="stylesheet">
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
-
-    <!-- Bootstrap core CSS -->
-<link href="bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
   </head>
   <body class="d-flex flex-column h-100">
     <header>
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Osaiteh</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Project</a>
-        </li>
-      </ul>
-      <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Enter Your Email" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Subscribe</button>
-      </form>
-    </div>
-  </nav>
-</header>
 
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+          <p><strong>Osaiteh</strong></p>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </div>
+          </div>
+      </nav>
+  <!-- Fixed navbar -->
+ 
 <!-- Begin page content -->
 
 <main role="main" class="flex-shrink-0">
@@ -71,8 +41,8 @@
   <div class="container">
     <h2>Hi there!  I'm <br><span>Ogbebor Glory</span></h2>
                 <h3>I am a Software Developer</h3>
-                <a href="asset/OgbeborGlory.pdf" target="blank"class="btn">Hire Me</a>
-                <a href="#contact" target="blank" class="btn">Contact Me</a>
+                <a id="btn" href="asset/OgbeborGlory.pdf" >Hire Me</a>
+                <a id="btn" href="#contact" target="blank" >Contact Me</a>
   </div>
 </section>
 
@@ -135,74 +105,79 @@
 </section>
 
 
-<section class="banner"></section>
-
-
 <section class="banner">
+  <div class="project-Div">
   <div class="heading">
-    <h2>My Latest Projects</h2>
+    <h2>My Projects</h2>
 </div>
-<div class="content">
-    <p class="summarya">
-        <em>Every great project begins with an even better story</em>
-    </p>
-    <p class="summaryb">
+<div>
+    <p>
+        <em>Every great project begins with an even better story</em> <br>
         I am quietly confident, naturally curious
             and perpetually working on improving my skills, 
             a website at a time.
         </p>
-    <div class="projectBx">
-        <a target="_blank" href="https://vavot.netlify.app/" target="_blank"> <img src="vavot.PNG"></a>
+    <div class="projectTitle">
+      <h3>Personal Projects</h3>
     </div>
-    <div class="projectBx">
-        <a href="https://chinedusignupform.netlify.app/" target="_blank"> <img src="signup.PNG"></a>
+        <div class="project">
+    <div class="card">
+        <a href="assets/images/PersonalWebsite.png"> <img src="assets/images/PersonalWebsite.PNG"></a>
+    <div class="pcontainer">
+      <p> <a href="http://osaiteh.herokuapp.com/">Personal Profile</a> <br>
+      <a href="">Github Link</a></p>
     </div>
-    <div class="projectBx">
-        <a href="https://chineduportfolio.netlify.app/" target="_blank"><img src="porfolio.PNG"></a>
+      </div>
+
+    <div class="card">
+        <a href="assets/images/RegistrationForm.PNG"> <img src="assets/images/RegistrationForm.PNG"></a>
+        <div class="pcontainer">
+          <p> <a href="https://osaitehsignupform.netlify.app">Registration Form</a> <br>
+            <a href="">Github Link</a></p></div>
     </div>
-    <div class="projectBx">
-        <a href="https://chineduportfolio.netlify.app/" target="_blank"><img src="hireme.PNG"></a>
+    <div class="card">
+        <a href="assets/images/Portfolio.PNG"><img src="assets/images/Portfolio.PNG"></a>
+        <div class="pcontainer">
+          <p> <a href="https://gloryogbeborportfolio.netlify.app/index.html">Personal Portfolio</a> <br>
+            <a href="">Github Link</a></p></div>
     </div>
-</div>
-<div class="heading">
-    <a href="#"class="btn">View More</a>
+
+    <div class="projectTitle">
+      <h3>Group Projects</h3>
+    </div>
+
+    <div class="card">
+        <a href="assets/images/MartReach.PNG"><img src="assets/images/MartReach.PNG"></a>
+        <div class="pcontainer">
+          <p> <a href="https://team2-digital-marketing-tool.netlify.app/index.html">MartReach</a> <br>
+            <a href="">Github Link</a></p></div>
+    </div>
+    <div class="card">
+        <a href="assets/images/JuniorDeveloperCommunity.PNG"><img src="assets/images/JuniorDeveloperCommunity.PNG"></a>
+        <div class="pcontainer">
+          <p> <a href="https://amigodevcommunity.netlify.app/index.html">Amigo Junior Developer Community</a> <br>
+            <a href="">Github Link</a></p></div>
+     </div>
+  </div>
 </div>
 </section>
 
 
 <section class="banner">
-  <h2>Contact Me</h2>
+  <div class="contact">
+    <h2>Contact Me</h2>
             <p>Thank you for visiting my page, you can drop your message here.</p>
-        </div>
         <div class="content">
-            <div class="contactInfo">
-                <h3>Contact Info</h3>
-                <div class="contactInfoBx">
-                <div class="box">
-                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                    <div class="text">
-                       <h3>Phone</h3> 
-                       <p>+2349078984930</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-                    <div class="text">
-                       <h3>Email</h3> 
-                       <p>osaiteh@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="formBx">
+        <div class="form">
             <form class="form" method="POST" name="Contact Me" data-netlify="true">  
                 <h3>Message Me</h3>
                 <input type="text" name="" placeholder="Full Name" required>
                 <input type="email" name="" placeholder="Email" required>
                 <textarea placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send">
+                <button type="submit" value="Send"> Send </button>
             </form>
         </div>
+      </div>
 </section>
 
 
@@ -230,6 +205,5 @@
 </div>
   </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets\js\index.js"></script>
 </html>
