@@ -1,7 +1,7 @@
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
+/************************************************** SCROLL EFFECT  *************************************************/
+html{
+  scroll-behavior: smooth;
+}
 :root{
   --pry-color:black;
   --primary-color:#f6f1c5;
@@ -29,9 +29,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--pry-color); 
 }
-/* Nav Bar */
 
 
+/************************************************** NAV BAR *************************************************/
 .container {
   padding: 60px 15px 0;
   height: fit-content;
@@ -56,7 +56,7 @@ section {
   padding: 4rem;
 }
 .banner{
-  min-height: 93h;
+  min-height: 100vh;
   background:var(--secondary-color);
   display: flex;
   width: 100%;
@@ -130,11 +130,7 @@ line-height: 1.5em;
   font-weight: 600;
 }
 
-/* PROJECT  */
-
-
-
-
+/************************************************* PROJECT  *************************************************/
 
 .project{
 display: flex;
@@ -154,9 +150,10 @@ display: flex;
 flex-direction: column;
 margin-top: 2vh;
 align-items: center;
+width: 500px;
 }
 .card > a >img{
-width: 30vw;
+  width: 400px;
 }
 
 .card:hover{
@@ -198,30 +195,15 @@ width: 26vw;
   text-align: center;
   color: var(--secondary-color);
 }
-@media screen and (max-width: 700px){
-.card > img{
-    width: 90vw;
-}
-.container{
-    width: 66vw;
-}
-.pcontainer{
-    width: auto;
-}
-}
 
+
+
+
+/**************************************************  CONTACT  ************************************************* */
 .contact{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.form{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 2vw;
-  width: 60vw;
 }
 h1{
   -webkit-text-stroke: 1px var(--black-color);
@@ -286,24 +268,25 @@ button[type=submit]:hover {
  background-color: transparent;
  box-shadow: 3px 3px  var(--primary-color);
 }
+
+@media screen and (max-width: 768px) {}
+
 .footer{
   background-color: black;
   color: var(--primary-color);
 }
-@media screen and (max-width: 700px){
- body{
-     height: max-content;
- }
-}
+
 
 /* Nav Bar */
+.navbar .container {
+  max-width: inherit;
+  background-color: inherit;
+}
 .navbar {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background-color: black;
+  padding: 0.4rem 0.8rem;
   color: var(--primary-color);
+  font-size: 1.2rem;
+  background-color: black;
 }
 
 .navbar .container {
@@ -336,12 +319,6 @@ button[type=submit]:hover {
 .navbar .container .logo p {
   font-size: 1.7rem;
   font-weight: bold;
-}
-
-.nav-list .nav-items .current {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  border-radius: 5px;
 }
 
 /* Hamburger */
@@ -388,7 +365,6 @@ button[type=submit]:hover {
 .hamburger-box.open .hamburger-list3 {
   transform: rotate(-45deg) translate(6px, -10px);
 }
-
 @media screen and (max-width: 768px) {
   /* Navbar */
   .navbar {
