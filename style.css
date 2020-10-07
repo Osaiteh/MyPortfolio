@@ -486,8 +486,8 @@ button[type=submit]:hover {
   padding: 100px;
   width: 100%;
   max-height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.76);
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.897);
 }
 
 /* Modal Content */
@@ -498,10 +498,9 @@ button[type=submit]:hover {
   padding: 0;
   width: 90%;
   max-width: 1200px;
-}
-.modal-content img {
   max-height:100vh;
-  width: auto;
+  overflow: hidden;
+ background-color: transparent;
 }
 /* The Close Button */
 .close {
@@ -577,7 +576,17 @@ button[type=submit]:hover {
 img.demo {
   opacity: 1;
 }
+.column::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .active,
 .demo:hover {
   opacity: 1;
