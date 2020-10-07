@@ -599,13 +599,22 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.left-col{
+  display: flex;
+}
 .footer-social {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin: 30px;
+  align-self: center;
+  flex: 1;
 }
 .footer-social i{
   color: var(--primary-color);
   font-size: 3em;
+}
+.footer-social i:hover{
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 3.5em;
 }
