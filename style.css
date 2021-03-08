@@ -95,6 +95,7 @@ line-height: 1.5em;
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: bolder;
+  margin-right: 30px;
 }
 #btn:hover{
   color:var(--primary-color);
@@ -165,7 +166,8 @@ padding-bottom: 30px;
 flex: 1 1 150px rgba(0, 0, 0, 0.2);
 box-shadow: 0 4px 8px 0;
 transition: 0.3s;
-margin: 30px;
+margin-top: 30px;
+margin-bottom: 30px;
 border-radius: 2%;
 display: flex;
 flex-direction: column;
@@ -468,6 +470,9 @@ button[type=submit]:hover {
     flex: 50%;
     max-width: 50%;
   }
+  .twitter-timeline{
+    width: 90vw;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -583,13 +588,6 @@ button[type=submit]:hover {
   color: var(--primary-color);
 }
 
-div.ncolumn{
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  background-color: var(--secondary-color);
-}
-
 img.demo {
   opacity: 1;
   height: 37px;
@@ -641,9 +639,25 @@ footer .container{
   font-weight: 900;
   font-size: 3.5em;
 }
+#social{
+  padding: 30px;
+}
 .twitter{
   display: flex;
   justify-content: center;
   background-color: #f6f1c5;
-  
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.twitter > div > img{
+  height: 80px;
+}
+/* .twitter-timeline{
+} */
+.twitter-follow-button{
+  width: 40vw;
+}
+#follow-button{
+  width: 50vw !important;
 }
