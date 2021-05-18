@@ -1,3 +1,6 @@
+
+
+
 /************************************************** SCROLL EFFECT  *************************************************/
 html{
   scroll-behavior: smooth;
@@ -37,6 +40,11 @@ html{
 #about{
   background-color: var(--primary-color);
   border: 5px solid var(--secondary-color);
+  /* white-space: nowrap; */
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  /* text-shadow: 2px 2px; */
+  font-size: 20px;
 }
 #about img{
   width: 200px;
@@ -44,7 +52,10 @@ html{
   border-radius: 30%;
   margin-bottom: 15px;
 }
-
+.about-text{
+  line-height: 1.5;
+  /* text-indent: 50px; */
+}
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -661,3 +672,5 @@ footer .container{
 #follow-button{
   width: 50vw !important;
 }
+
+
